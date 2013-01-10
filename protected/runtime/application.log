@@ -1,0 +1,874 @@
+2012/10/18 03:07:19 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php:37)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): SiteController->renderFile()
+#1 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): SiteController->endWidget()
+#5 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php(6): SiteController->endContent()
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): SiteController->renderInternal()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(785): SiteController->renderFile()
+#9 C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php(32): SiteController->render()
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#14 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#15 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#16 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\yii\yiiuser\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/yiiuser/
+in C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php (37)
+in C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php (6)
+in C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php (32)
+2012/10/18 03:08:03 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\yii\yiiuser\protected\modules\user\models\User.php:36)
+Stack trace:
+#0 C:\xampp\htdocs\yii\yiiuser\protected\modules\user\models\User.php(28): model()
+#1 C:\xampp\htdocs\yii\yiiuser\protected\modules\user\components\UserIdentity.php(27): model()
+#2 C:\xampp\htdocs\yii\yiiuser\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\xampp\htdocs\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate()
+#4 C:\xampp\htdocs\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute()
+#5 C:\xampp\htdocs\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#6 C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php(94): LoginForm->validate()
+#7 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(287): SiteController->runAction()
+#10 C:\xampp\htdocs\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#11 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): SiteController->run()
+#12 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#13 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\yii\yiiuser\index.php(13): CWebApplication->run()
+REQUEST_URI=/yii/yiiuser/index.php/site/login
+in C:\xampp\htdocs\yii\yiiuser\protected\modules\user\models\User.php (36)
+in C:\xampp\htdocs\yii\yiiuser\protected\modules\user\models\User.php (28)
+in C:\xampp\htdocs\yii\yiiuser\protected\modules\user\components\UserIdentity.php (27)
+2012/10/18 03:08:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/index.php/gii
+---
+2012/10/18 03:09:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/index.php/gii
+---
+2012/10/18 03:10:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:10:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:10:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:10:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:10:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:11:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:14:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:14:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:14:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:14:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:14:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:15:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:15:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/gii
+---
+2012/10/18 03:15:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gii".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('gii')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/index.php/gii
+---
+2012/10/18 03:42:59 [error] [exception.CException] exception 'CException' with message 'Application authorization manager must extend the RDbAuthManager class.' in C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\components\RInstaller.php:57
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(388): RInstaller->init()
+#1 C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\RightsModule.php(200): CModule->getComponent('installer')
+#2 C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\controllers\InstallController.php(29): RightsModule->getInstaller()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): InstallController->init()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/yiiuser/rights
+---
+2012/10/18 03:43:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rights/install.php".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install....')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/rights/install.php
+---
+2012/10/18 03:43:15 [error] [exception.CException] exception 'CException' with message 'Application authorization manager must extend the RDbAuthManager class.' in C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\components\RInstaller.php:57
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\base\CModule.php(388): RInstaller->init()
+#1 C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\RightsModule.php(200): CModule->getComponent('installer')
+#2 C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\controllers\InstallController.php(29): RightsModule->getInstaller()
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(282): InstallController->init()
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rights/install')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/yiiuser/rights/install
+---
+2012/10/18 07:21:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rights".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/rights
+---
+2012/10/18 07:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rights".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/rights
+---
+2012/10/18 08:04:52 [error] [exception.CException] exception 'CException' with message 'CPhpAuthManager and its behaviors do not have a method or closure named "getAssignmentsByItemName".' in C:\xampp\htdocs\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\components\RAuthorizer.php(285): CComponent->__call('getAssignmentsB...', Array)
+#1 C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\components\RAuthorizer.php(285): CPhpAuthManager->getAssignmentsByItemName('Admin')
+#2 C:\xampp\htdocs\yii\yiiuser\protected\modules\rights\controllers\AssignmentController.php(51): RAuthorizer->getSuperusers()
+#3 C:\xampp\htdocs\yii\framework\web\CController.php(1145): AssignmentController->accessRules()
+#4 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#9 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('rights')
+#10 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/yii/yiiuser/rights
+---
+2012/10/18 09:03:37 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php(36): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\yiiuser\protected\modules\user\controllers\ProfileController.php(20): CController->render('profile', Array)
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): ProfileController->actionProfile()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('user/profile')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/yiiuser/index.php/user/profile
+HTTP_REFERER=http://localhost/yii/yiiuser/index.php/user/login
+---
+2012/10/18 09:04:19 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php(36): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php(32): CController->render('index')
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/yiiuser/
+---
+2012/10/18 09:06:47 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php(36): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php(32): CController->render('index')
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/yiiuser/
+---
+2012/10/18 09:13:45 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php(36): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php(32): CController->render('index')
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/yiiuser/
+---
+2012/10/18 09:13:46 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php(36): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php(32): CController->render('index')
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/yiiuser/
+---
+2012/10/18 09:13:47 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\main.php(36): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#7 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#10 C:\xampp\htdocs\yii\yiiuser\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\yiiuser\protected\controllers\SiteController.php(32): CController->render('index')
+#15 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/yii/yiiuser/
+---
+2012/10/18 09:14:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "messages".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('messages')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/yii/yiiuser/messages
+---
+2012/10/18 09:14:27 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(338): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CWebApplication->createController('message')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('message')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/yiiuser/message
+---
+2012/10/18 09:16:49 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(338): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CWebApplication->createController('message')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('message')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/yiiuser/message
+---
+2012/10/18 09:23:00 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(338): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CWebApplication->createController('message')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('message')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/yiiuser/message
+---
+2012/10/18 09:23:01 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(338): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CWebApplication->createController('message')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('message')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/yiiuser/message
+---
+2012/10/18 09:24:59 [error] [exception.CException] exception 'CException' with message 'Alias "message.MessageModule" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\YiiBase.php(198): YiiBase::import('message.Message...', true)
+#1 C:\xampp\htdocs\yii\framework\base\CModule.php(283): YiiBase::createComponent('message.Message...', 'message', NULL, Array)
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(338): CModule->getModule('message')
+#3 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(277): CWebApplication->createController('message')
+#4 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('message')
+#5 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\yii\yiiuser\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/yii/yiiuser/message
+---
+2013/01/09 15:35:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'yiirights3'' in C:\xampp\htdocs\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 C:\xampp\htdocs\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(Message))
+#7 C:\xampp\htdocs\yii-pharmacy-management\protected\modules\message\models\Message.php(39): CActiveRecord::model('Message')
+#8 C:\xampp\htdocs\yii-pharmacy-management\protected\modules\message\MessageModule.php(69): Message::model()
+#9 C:\xampp\htdocs\yii-pharmacy-management\protected\views\layouts\main.php(37): MessageModule->getCountUnreadedMessages(NULL)
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#12 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#14 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#15 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#16 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#17 C:\xampp\htdocs\yii-pharmacy-management\protected\views\layouts\column1.php(6): CBaseController->endContent()
+#18 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#19 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#21 C:\xampp\htdocs\yii-pharmacy-management\protected\controllers\SiteController.php(32): CController->render('index')
+#22 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('')
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('')
+#28 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#29 C:\xampp\htdocs\yii-pharmacy-management\index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/yii-pharmacy-management/
+---
+2013/01/09 17:06:10 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.mbmenu.MbMenu" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 C:\xampp\htdocs\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(UnitController), 'application.ext...', Array)
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 C:\xampp\htdocs\yii-pharmacy-management\protected\views\layouts\main.php(52): CBaseController->widget('application.ext...', Array)
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div class="spa...')
+#8 C:\xampp\htdocs\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div class="spa...')
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#11 C:\xampp\htdocs\yii-pharmacy-management\protected\views\layouts\column2.php(22): CBaseController->endContent()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(785): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii-pharmacy-management\protected\controllers\UnitController.php(128): CController->render('index', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): UnitController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('unit/index')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\yii-pharmacy-management\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/yii-pharmacy-management/index.php/unit/index
+HTTP_REFERER=http://localhost/yii-pharmacy-management/index.php/medicine/index
+---
+2013/01/10 04:56:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "Bottle".' in C:\xampp\htdocs\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CController.php(271): CController->missingAction('Bottle')
+#1 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('Bottle')
+#2 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('unit/Bottle')
+#3 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/manajemen-apotik/index.php/unit/Bottle
+HTTP_REFERER=http://localhost/manajemen-apotik/index.php/unit/update/1
+---
+2013/01/10 05:07:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/b963d515/gridview/bg.gif".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/b963d515...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manajemen-apotik/assets/b963d515/gridview/bg.gif
+---
+2013/01/10 05:07:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/b963d515/gridview/bg.gif".' in C:\xampp\htdocs\yii\framework\web\CWebApplication.php:287
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('assets/b963d515...')
+#1 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/manajemen-apotik/assets/b963d515/gridview/bg.gif
+---
+2013/01/10 08:03:19 [error] [exception.CException] exception 'CException' with message 'Property "Medicine.unitName" is not defined.' in C:\xampp\htdocs\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('unitName')
+#1 C:\xampp\htdocs\manajemen-apotik\protected\models\Medicine.php(106): CActiveRecord->__get('unitName')
+#2 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php(36): Medicine->search()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#7 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(144): CController->render('admin', Array)
+#8 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionIndex()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#11 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#18 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('medicine/index')
+#19 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/manajemen-apotik/index.php/medicine/index
+---
+2013/01/10 08:13:04 [error] [php] include(unitName.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\xampp\htdocs\yii\framework\YiiBase.php:423)
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\validators\CValidator.php(187): import()
+#1 C:\xampp\htdocs\yii\framework\base\CModel.php(285): createValidator()
+#2 C:\xampp\htdocs\yii\framework\base\CModel.php(259): Medicine->createValidators()
+#3 C:\xampp\htdocs\yii\framework\base\CModel.php(302): Medicine->getValidators()
+#4 C:\xampp\htdocs\yii\framework\web\helpers\CHtml.php(1197): Medicine->isAttributeRequired()
+#5 C:\xampp\htdocs\yii\framework\web\widgets\CActiveForm.php(563): activeLabelEx()
+#6 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\_form.php(17): CActiveForm->labelEx()
+#7 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): MedicineController->renderInternal()
+#9 C:\xampp\htdocs\yii\framework\web\CController.php(870): MedicineController->renderFile()
+#10 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\create.php(16): MedicineController->renderPartial()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require()
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): MedicineController->renderInternal()
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(870): MedicineController->renderFile()
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(783): MedicineController->renderPartial()
+#15 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(80): MedicineController->render()
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionCreate()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): MedicineController->runAction()
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): RightsFilter->filter()
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): MedicineController->filterRights()
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): MedicineController->runActionWithFilters()
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): MedicineController->run()
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController()
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\manajemen-apotik\index.php(13): CWebApplication->run()
+REQUEST_URI=/manajemen-apotik/index.php/medicine/create
+in C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\_form.php (17)
+in C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\create.php (16)
+in C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php (80)
+2013/01/10 08:20:05 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE unit.name LIKE :ycp0.
+in C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php (49)
+in C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php (144)
+in C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php (36)
+2013/01/10 08:20:05 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE unit.name LIKE :ycp0' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php(49): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(144): CController->render('admin', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('medicine/index')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/manajemen-apotik/index.php/medicine/index?Medicine%5Bname%5D=&Medicine%5BunitName%5D=tab&Medicine%5Bsale_price%5D=&Medicine%5Bcurrent_stock%5D=&Medicine%5Bmember_discount%5D=&Medicine_page=1&ajax=medicine-grid
+HTTP_REFERER=http://localhost/manajemen-apotik/index.php/medicine/index
+---
+2013/01/10 08:20:10 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE (name LIKE :ycp0) AND (unit.name LIKE :ycp1).
+in C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php (49)
+in C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php (144)
+in C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php (36)
+2013/01/10 08:20:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE (name LIKE :ycp0) AND (unit.name LIKE :ycp1)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php(49): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(144): CController->render('admin', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('medicine/index')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/manajemen-apotik/index.php/medicine/index?Medicine%5Bname%5D=an&Medicine%5BunitName%5D=tab&Medicine%5Bsale_price%5D=&Medicine%5Bcurrent_stock%5D=&Medicine%5Bmember_discount%5D=&Medicine_page=1&ajax=medicine-grid
+HTTP_REFERER=http://localhost/manajemen-apotik/index.php/medicine/index
+---
+2013/01/10 08:20:20 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE ((name LIKE :ycp0) AND (sale_price=:ycp1)) AND (unit.name LIKE :ycp2).
+in C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php (49)
+in C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php (144)
+in C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php (36)
+2013/01/10 08:20:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE ((name LIKE :ycp0) AND (sale_price=:ycp1)) AND (unit.name LIKE :ycp2)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php(49): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(144): CController->render('admin', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('medicine/index')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/manajemen-apotik/index.php/medicine/index?Medicine%5Bname%5D=an&Medicine%5BunitName%5D=tab&Medicine%5Bsale_price%5D=15&Medicine%5Bcurrent_stock%5D=&Medicine%5Bmember_discount%5D=&Medicine_page=1&ajax=medicine-grid
+HTTP_REFERER=http://localhost/manajemen-apotik/index.php/medicine/index
+---
+2013/01/10 08:20:26 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE (name LIKE :ycp0) AND (unit.name LIKE :ycp1).
+in C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php (49)
+in C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php (144)
+in C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php (36)
+2013/01/10 08:20:26 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'unit.name' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `medicine` `t` WHERE (name LIKE :ycp0) AND (unit.name LIKE :ycp1)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#7 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#8 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php(49): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#12 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#13 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#14 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(144): CController->render('admin', Array)
+#16 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionIndex()
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#22 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#26 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('medicine/index')
+#27 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/manajemen-apotik/index.php/medicine/index?Medicine%5Bname%5D=an&Medicine%5BunitName%5D=tab&Medicine%5Bsale_price%5D=&Medicine%5Bcurrent_stock%5D=&Medicine%5Bmember_discount%5D=&Medicine_page=1&ajax=medicine-grid
+HTTP_REFERER=http://localhost/manajemen-apotik/index.php/medicine/index
+---
+2013/01/10 08:49:18 [error] [exception.CException] exception 'CException' with message 'The column must be specified in the format of "Name:Type:Label", where "Type" and "Label" are optional.' in C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php:360
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(331): CGridView->createDataColumn('')
+#1 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(307): CGridView->initColumns()
+#2 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#3 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#4 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php(53): CBaseController->widget('zii.widgets.gri...', Array)
+#5 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#6 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#7 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#9 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(144): CController->render('admin', Array)
+#10 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionIndex()
+#11 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#20 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('medicine/index')
+#21 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/manajemen-apotik/index.php/medicine/index
+---
+2013/01/10 08:51:42 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `medicine` `t`  LEFT OUTER JOIN `unit` `unit` ON (`t`.`unit_id`=`unit`.`id`)  WHERE (id=:ycp0).
+in C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php (52)
+in C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php (144)
+in C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php (36)
+2013/01/10 08:51:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous. The SQL statement executed was: SELECT COUNT(DISTINCT `t`.`id`) FROM `medicine` `t`  LEFT OUTER JOIN `unit` `unit` ON (`t`.`unit_id`=`unit`.`id`)  WHERE (id=:ycp0)' in C:\xampp\htdocs\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\xampp\htdocs\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(728): CDbCommand->queryScalar()
+#2 C:\xampp\htdocs\yii\framework\db\ar\CActiveFinder.php(155): CJoinElement->count(Object(CDbCriteria))
+#3 C:\xampp\htdocs\yii\framework\db\ar\CActiveRecord.php(1544): CActiveFinder->count(Object(CDbCriteria))
+#4 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#5 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#6 C:\xampp\htdocs\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#7 C:\xampp\htdocs\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#8 C:\xampp\htdocs\yii\framework\zii\widgets\CBaseListView.php(108): CDataProvider->getData()
+#9 C:\xampp\htdocs\yii\framework\zii\widgets\grid\CGridView.php(289): CBaseListView->init()
+#10 C:\xampp\htdocs\yii\framework\web\CBaseController.php(148): CGridView->init()
+#11 C:\xampp\htdocs\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#12 C:\xampp\htdocs\manajemen-apotik\protected\views\medicine\admin.php(52): CBaseController->widget('zii.widgets.gri...', Array)
+#13 C:\xampp\htdocs\yii\framework\web\CBaseController.php(127): require('C:\xampp\htdocs...')
+#14 C:\xampp\htdocs\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#15 C:\xampp\htdocs\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#16 C:\xampp\htdocs\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#17 C:\xampp\htdocs\manajemen-apotik\protected\controllers\MedicineController.php(144): CController->render('admin', Array)
+#18 C:\xampp\htdocs\yii\framework\web\actions\CInlineAction.php(50): MedicineController->actionIndex()
+#19 C:\xampp\htdocs\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#20 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#21 C:\xampp\htdocs\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#22 C:\xampp\htdocs\manajemen-apotik\protected\modules\rights\components\RController.php(36): CFilter->filter(Object(CFilterChain))
+#23 C:\xampp\htdocs\yii\framework\web\filters\CInlineFilter.php(59): RController->filterRights(Object(CFilterChain))
+#24 C:\xampp\htdocs\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#25 C:\xampp\htdocs\yii\framework\web\CController.php(292): CFilterChain->run()
+#26 C:\xampp\htdocs\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#27 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(283): CController->run('index')
+#28 C:\xampp\htdocs\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('medicine/index')
+#29 C:\xampp\htdocs\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#30 C:\xampp\htdocs\manajemen-apotik\index.php(13): CApplication->run()
+#31 {main}
+REQUEST_URI=/manajemen-apotik/index.php/medicine/index?Medicine%5Bid%5D=1&Medicine%5Bname%5D=&Medicine%5Bunit_id%5D=&Medicine%5Bsale_price%5D=&Medicine%5Bcurrent_stock%5D=&Medicine%5Bmember_discount%5D=&ajax=medicine-grid
+HTTP_REFERER=http://localhost/manajemen-apotik/index.php/medicine/index
+---
