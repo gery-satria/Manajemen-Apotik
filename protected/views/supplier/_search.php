@@ -12,33 +12,28 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'id'); ?>
-		<?php echo $form->textField($model,'id'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'company_name'); ?>
-		<?php echo $form->textField($model,'company_name',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'company_name',array('size'=>40)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'address'); ?>
-		<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'address',array('size'=>40)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'phone',array('size'=>40)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'email',array('size'=>40)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'contact_person'); ?>
-		<?php echo $form->textField($model,'contact_person',array('size'=>60,'maxlength'=>255)); ?>
+		<?php echo $form->textField($model,'contact_person',array('size'=>40)); ?>
 	</div>
 
 	<div class="row buttons">

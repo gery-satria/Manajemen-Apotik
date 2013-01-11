@@ -113,4 +113,9 @@ class Medicine extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function getMedicine()
+        {
+                return $this->name;
+        }
 }

@@ -48,6 +48,11 @@ class Supplier extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id, company_name, address, phone, email, contact_person', 'safe', 'on'=>'search'),
+                        array('company_name', 'match', 'pattern'=>'/^[a-zA-Z-.]/', 'on'=>array('insert','update'), 'message'=>'Company name must be a character.'),
+                        array('phone', 'match', 'pattern'=>'/^[0-9()-]/', 'on'=>array('insert','update'), 'message'=>'Phone must be a phone number.'),
+                        array('email','email'),
+                        array('contact_person', 'match', 'pattern'=>'/^[a-zA-Z]/', 'on'=>array('insert','update'), 'message'=>'Contact person must be a character.'),
+                        array('company_name,', 'unique', 'on'=>'insert', 'message'=>'This value already exists!'),
 		);
 	}
 
@@ -101,4 +106,9 @@ class Supplier extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+        
+        public function getSupplier()
+        {
+                return $this->company_name;
+        }
 }

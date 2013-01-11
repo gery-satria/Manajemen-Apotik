@@ -14,7 +14,8 @@ class SupplierController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+                        'rights',
+			//'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
@@ -71,7 +72,7 @@ class SupplierController extends Controller
 		{
 			$model->attributes=$_POST['Supplier'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -95,7 +96,7 @@ class SupplierController extends Controller
 		{
 			$model->attributes=$_POST['Supplier'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('update',array(
@@ -120,18 +121,18 @@ class SupplierController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Supplier');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
-	}
+//	public function actionIndex()
+//	{
+//		$dataProvider=new CActiveDataProvider('Supplier');
+//		$this->render('index',array(
+//			'dataProvider'=>$dataProvider,
+//		));
+//	}
 
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new Supplier('search');
 		$model->unsetAttributes();  // clear any default values

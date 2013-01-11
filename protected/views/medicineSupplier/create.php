@@ -3,16 +3,13 @@
 /* @var $model MedicineSupplier */
 
 $this->breadcrumbs=array(
-	'Medicine Suppliers'=>array('index'),
+	'Medicine Supplier'=>array('index'),
 	'Create',
-);
-
-$this->menu=array(
-	array('label'=>'List MedicineSupplier', 'url'=>array('index')),
-	array('label'=>'Manage MedicineSupplier', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create MedicineSupplier</h1>
+<h2>Create Medicine Supplier</h2>
+
+<?php echo CHtml::link('List Medicine Supplier', array('/medicineSupplier'), array('style'=>'text-decoration:none')) . "<br /><br />"; ?>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

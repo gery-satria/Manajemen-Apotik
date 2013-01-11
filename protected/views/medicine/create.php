@@ -12,5 +12,4 @@ $this->breadcrumbs=array(
 
 <?php echo CHtml::link('List Medicine', array('/medicine'), array('style'=>'text-decoration:none')) . "<br /><br />"; ?>
 
-
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -3,19 +3,13 @@
 /* @var $model Supplier */
 
 $this->breadcrumbs=array(
-	'Suppliers'=>array('index'),
-	$model->id=>array('view','id'=>$model->id),
+	'Supplier'=>array('index'),
 	'Update',
-);
-
-$this->menu=array(
-	array('label'=>'List Supplier', 'url'=>array('index')),
-	array('label'=>'Create Supplier', 'url'=>array('create')),
-	array('label'=>'View Supplier', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Supplier', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Supplier <?php echo $model->id; ?></h1>
+<h2>Update Supplier <?php echo $model->company_name; ?></h2>
+
+<?php echo CHtml::link('List Supplier', array('/supplier'), array('style'=>'text-decoration:none')) . "<br /><br />"; ?>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

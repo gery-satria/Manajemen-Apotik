@@ -22,19 +22,20 @@ $('.search-form form').submit(function(){
 
 <h2>Manage Medicine</h2>
 
-<?php echo CHtml::link('Create Medicine', array('/medicine/create'), array('style'=>'text-decoration:none')); ?> ||
+<?php echo CHtml::link('Create Medicine', array('/medicine/create'), array('style'=>'text-decoration:none')); ?>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
-<div class="search-form" style="display:none">
-<?php $this->renderPartial('_search',array(
-	'model'=>$model,
-)); ?>
+<?php //echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
+<!--<div class="search-form" style="display:none">
+<?php //$this->renderPartial('_search',array(
+	//'model'=>$model,
+//)); ?>
 </div><!-- search-form -->
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'medicine-grid',
 	'dataProvider'=>$model->with('unit')->search(),
 	'filter'=>$model,
+	'cssFile'=>Yii::app()->request->baseUrl . '/css/styles.css',
 	'columns'=>array(
 		'name',
 		array('name'=>'unitName',

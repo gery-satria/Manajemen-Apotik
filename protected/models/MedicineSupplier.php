@@ -14,7 +14,10 @@
  */
 class MedicineSupplier extends CActiveRecord
 {
-	/**
+        var $medicineName;
+        var $supplierName;
+        
+         /**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
 	 * @return MedicineSupplier the static model class
@@ -44,7 +47,8 @@ class MedicineSupplier extends CActiveRecord
 			array('medicine_id, supplier_id', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, medicine_id, supplier_id', 'safe', 'on'=>'search'),
+			array('id, medicine_id, supplier_id, medicineName, supplierName', 'safe', 'on'=>'search'),
+                        array('supplierName,', 'unique', 'on'=>'insert', 'message'=>'This value already exists!'),
 		);
 	}
 
@@ -87,6 +91,8 @@ class MedicineSupplier extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('medicine_id',$this->medicine_id);
 		$criteria->compare('supplier_id',$this->supplier_id);
+                $criteria->compare('medicine.name',  $this->medicineName, true);
+                $criteria->compare('supplier.company_name',  $this->supplierName, true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

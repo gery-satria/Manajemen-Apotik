@@ -11,19 +11,39 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
-
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'medicine_id'); ?>
-		<?php echo $form->textField($model,'medicine_id'); ?>
+		<?php echo $form->labelEx($model,'medicine_id'); 
+                      $this->widget('EJuiAutoCompleteFkField',array(
+                          'model'=>$model,
+                          'attribute'=>'medicine_id',
+                          'sourceUrl'=>Yii::app()->createUrl('/medicineSupplier/findMedicine'),
+                          'showFKField'=>false,
+                          'relName'=>'medicine',
+                          'displayAttr'=>'Medicine',
+                          'autoCompleteLength'=>40,
+                          'options'=>array(
+                                'minLength'=>1,
+                          ),
+                      ));?>
 		<?php echo $form->error($model,'medicine_id'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'supplier_id'); ?>
-		<?php echo $form->textField($model,'supplier_id'); ?>
+		<?php echo $form->labelEx($model,'supplier_id'); 
+                      $this->widget('EJuiAutoCompleteFkField',array(
+                          'model'=>$model,
+                          'attribute'=>'supplier_id',
+                          'sourceUrl'=>Yii::app()->createUrl('/medicineSupplier/findSupplier'),
+                          'showFKField'=>false,
+                          'relName'=>'supplier',
+                          'displayAttr'=>'Supplier',
+                          'autoCompleteLength'=>40,
+                          'options'=>array(
+                                'minLength'=>1,
+                          ),
+                      ));?>
 		<?php echo $form->error($model,'supplier_id'); ?>
 	</div>
 

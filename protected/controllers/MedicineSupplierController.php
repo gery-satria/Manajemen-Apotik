@@ -14,7 +14,8 @@ class MedicineSupplierController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+                        'rights',
+			//'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
 		);
 	}
@@ -71,7 +72,7 @@ class MedicineSupplierController extends Controller
 		{
 			$model->attributes=$_POST['MedicineSupplier'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -95,7 +96,7 @@ class MedicineSupplierController extends Controller
 		{
 			$model->attributes=$_POST['MedicineSupplier'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('update',array(
@@ -120,18 +121,18 @@ class MedicineSupplierController extends Controller
 	/**
 	 * Lists all models.
 	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('MedicineSupplier');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
-	}
+//	public function actionIndex()
+//	{
+//		$dataProvider=new CActiveDataProvider('MedicineSupplier');
+//		$this->render('index',array(
+//			'dataProvider'=>$dataProvider,
+//		));
+//	}
 
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionIndex()
 	{
 		$model=new MedicineSupplier('search');
 		$model->unsetAttributes();  // clear any default values
@@ -154,6 +155,12 @@ class MedicineSupplierController extends Controller
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
+                
+                if (isset($_GET['id']))
+                $this->_model=  MedicineSupplier::model()->with('supplier')->findbyPk($_GET['id']);
+                
+                if (isset($_GET['id']))
+                $this->_model=  MedicineSupplier::model()->with('medicine')->findbyPk($_GET['id']);
 	}
 
 	/**
@@ -168,4 +175,58 @@ class MedicineSupplierController extends Controller
 			Yii::app()->end();
 		}
 	}
+        
+        public function actionFindSupplier()
+        {
+                $q = $_GET['term'];
+                if (isset($q))
+                {
+                        $criteria = new CDbCriteria;
+                        
+                        $criteria->compare('company_name', $q, true);
+                        $supplier = Supplier::model()->findAll($criteria);
+                        
+                        if (!empty($supplier))
+                        {
+                                $out = array();
+                                foreach ($supplier as $s)
+                                {
+                                        $out [] = array(
+                                                'label'=> $s->company_name,
+                                                'value'=> $s->company_name,
+                                                'id'=> $s->id,
+                                        );
+                                }
+                                echo CJSON::encode($out);
+                                Yii::app()->end();
+                        }
+                }
+        }
+        
+        public function actionFindMedicine()
+        {
+                $q = $_GET['term'];
+                if (isset($q))
+                {
+                        $criteria = new CDbCriteria;
+                        
+                        $criteria->compare('name', $q, true);
+                        $medicine = Medicine::model()->findAll($criteria);
+                        
+                        if (!empty($medicine))
+                        {
+                                $out = array();
+                                foreach ($medicine as $m)
+                                {
+                                        $out [] = array(
+                                                'label'=> $m->name,
+                                                'value'=> $m->name,
+                                                'id'=> $m->id,
+                                        );
+                                }
+                                echo CJSON::encode ($out);
+                                Yii::app()->end();
+                        }
+                }
+        }
 }
